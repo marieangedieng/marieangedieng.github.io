@@ -1,5 +1,28 @@
 ## Projects
 
+####   Squid Grid: Autonomous Navigation and Risk Management in a Slippery Environment (Model-Free RL)
+- Reinforcement learning project on autonomous decision-making under uncertainty
+- Formalized a 10x10 gridworld navigation task (safe cells and trap/hole cells) as a Markov Decision Process (MDP), including a stochastic ("slippery") transition model and a custom reward function
+- Implemented and compared model-free RL algorithms (Monte Carlo, TD, SARSA, Q-learning) to learn an optimal, risk-aware navigation policy
+- Monitored training via reward curves and policy visualization across multiple seeds
+- Tools used: Python, Gymnasium, NumPy, Reinforcement Learning (MDP, Q-learning, SARSA)
+
+####   From-Scratch Reimplementation of Transformer-Based Architectures (Mixtral MoE & DeepSeek-R1/GRPO)
+- Full from-scratch PyTorch implementation of two research papers, without high-level libraries (no HuggingFace Trainer, no TRL), under strict compute constraints
+- **Mixtral (Sparse MoE)**: implemented a causal Transformer decoder with a custom Sparse Mixture-of-Experts layer (top-k routing, load-balancing auxiliary loss, SwiGLU experts) trained on Tiny Shakespeare; compared dense vs. MoE (top-k=1/2) on validation loss, active vs. total parameters, and expert-routing distribution
+- **DeepSeek-R1 / GRPO**: implemented Group Relative Policy Optimization from scratch (group sampling, group-normalized advantages, clipped policy ratio, KL penalty against a reference model) to train a small reasoning model on GSM8K with rule-based (accuracy + format) rewards, following the R1-Zero paradigm
+- Tools used: Python, PyTorch (custom Transformer, attention, MoE, GRPO loop) | Datasets: Tiny Shakespeare, GSM8K
+**Link**: [Repository](https://github.com/marieangedieng/papers-implementations)
+
+####   French Voice Sentiment Analysis Pipeline for Customer Calls
+- End-to-end deep learning pipeline for automatic sentiment detection from French customer call recordings
+- Speech-to-text transcription using Wav2Vec2 (wav2vec2-large-xlsr-53-french) combined with a DistilCamemBERT sentiment classifier, mapping 5-star predictions to three business classes (negative, neutral, positive)
+- Built an audio preprocessing module (mono conversion, 16kHz resampling, normalization, silence/duration validation) to ensure robust inference on real-world audio
+- Exposed the pipeline via a FastAPI backend (/predict, /health) and a Gradio client interface communicating over HTTP
+- Containerized the full stack with Docker and docker-compose, with quantitative evaluation scripts (WER on Common Voice FR, F1/accuracy on Allociné)
+- Tools used: Python, PyTorch, Hugging Face Transformers, FastAPI, Gradio, Docker | Models: [Wav2Vec2 French ASR](https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-french), [DistilCamemBERT Sentiment](https://huggingface.co/cmarkea/distilcamembert-base-sentiment)
+**Link**: [Repository](https://github.com/marieangedieng/vocal_asr_sentiment)
+  
 ####   AI-Optimized Predictive Maintenance
 - AI project for sustainable development
 - Economic sector analysis (Industry)
