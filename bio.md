@@ -2,7 +2,7 @@
 
 [Linkedin](https://www.linkedin.com/in/marieangedieng/) | [Github](https://github.com/marieangedieng)
 
-I’m Marie-Ange Dieng, a passionate student and aspiring technologist currently pursuing a Master in Artificial Intelligence & Management at [IA School](https://www.intelligence-artificielle-school.com/les-formations/cycle-mastere/master-1-in-artificial-intelligence-management-parcours-data-scientist/) . I hold a Bachelor’s degree in Mathematics and Computer Science from the [Catholic University of West Africa (UCAO)](https://ucao-uut.tg/licence-informatique/), where I graduated as valedictorian.
+I’m Marie-Ange Dieng, a passionate student and aspiring technologist currently pursuing a Master in Artificial Intelligence & Management at [Dakar Institute of Technology](https://dit.sn/master-intelligence-artificielle/) . I hold a Bachelor’s degree in Mathematics and Computer Science from the [Catholic University of West Africa (UCAO)](https://ucao-uut.tg/licence-informatique/), where I graduated as valedictorian.
 
 At the heart of my journey is a deep love for mathematics, especially probability, linear algebra, and multilinear algebra. To me, math is more than numbers and equations; it’s the foundation of logic and the key to unlocking the mysteries of AI. Whether it’s solving complex optimization problems, building probabilistic models to handle uncertainty, or applying multilinear algebra to decompose high-dimensional data, I thrive where mathematical theory meets AI innoation.
 
